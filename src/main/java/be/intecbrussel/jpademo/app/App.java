@@ -1,10 +1,21 @@
 package be.intecbrussel.jpademo.app;
 
-import javax.persistence.EntityManagerFactory;
+
+import be.intecbrussel.jpademo.model.Person;
 
 public class App {
 
     public static void main(String[] args) {
-        EntityManagerFactory emf;
+
+        Person p = new Person();
+        p.setFirstName("Super");
+        p.setLastName("Man");
+        p.setAge(30);
+        p.setAddress("America");
+        p.setId(1);
+
+        System.out.println(p);
+
+
     }
 }
